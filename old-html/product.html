@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Product</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="icon" href="icon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="res/css/customStyle.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  		<script type="text/javascript" src="res/js/mainCode.js"></script>
+	</head>
+	<body>
+		<div id="headWrapper">
+			<div class="container-fluid" id="headContainer">
+				<div class="container">
+					<div class="row">
+						<div class="col-2">
+							<img class="img-fluid" src="crateLogo.png">
+						</div>
+						<div class="col-6" id="searchBarContainer">
+							<input id="searchBar" type="text" name="searchBar" placeholder="Presiona enter para buscar...">
+						</div>
+						<div class="col-4"></div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-10">
+						<div class="row">
+							<div class="col topContainer">
+								<a href="#" class="topMenuButton">Categorias <span class="fa fa-sort-down"></span></a>
+								<div class="container linksContainer">
+									<ul>
+										<li><a href="#">Electronica</a></li>
+										<li><a href="#">Accesorios</a></li>
+										<li><a href="#">Automoviles</a></li>
+										<li><a href="#">Linea blanca</a></li>
+										<li><a href="#">Electrodomesticos</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col topContainer">
+								<a href="#" class="topMenuButton">Cuenta <span class="fa fa-sort-down"></span></a>
+								<div class="container linksContainer">
+									<ul>
+										<li><a href="#" onclick="showModal(1)">Ingresar</a></li>
+										<li><a href="#" onclick="showModal(2)">Registrarse</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col topContainer">
+								<a href="cart.html" class="topMenuButton">Carrito</a>
+							</div>
+							<div class="col topContainer">
+								<a href="searchResult.html" class="topMenuButton">Ofertas</a>
+							</div>
+							<div class="col topContainer">
+								<a href="index.html" class="topMenuButton">Home</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<br>
+			<div class="row">
+				<div class="col-6">
+					<h2 id="productName">Xiaomi Smart watch</h2>
+					<hr>
+					<div id="imageContainer">
+						<a href="#"><img class="img-responsive img-thumbnail" src="img/products/miBand.jpg" alt="Aqui va la imagen del producto"></a>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col">
+							<img class="img-responsive img-thumbnail" src="img/products/miBand.jpg">
+						</div>
+						<div class="col">
+							<img class="img-responsive img-thumbnail" src="img/products/miBand-1.jpg">
+						</div>
+						<div class="col">
+							<img class="img-responsive img-thumbnail" src="img/products/miBand-2.jpg">
+						</div>
+						<div class="col">
+							<img class="img-responsive img-thumbnail" src="img/products/miBand-3.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<h4>Descripcion:</h4>
+					<hr>
+					<p id="productDescription">
+						Monitor your activity levels, track walking distance and
+						calculate calories burned. Achieve the daily exercise targets you set
+						and work towards a healthier lifestyle! 
+						<br>
+						<br>
+						Sync with the Mi Band app in real-time via Bluetooth® Low Energy (BLE) to view your fitness and sleep
+						records. Save up to a year's worth of data and get healthy lifestyle suggestions. Share and compare
+						your data with friends to see who's healthier! 
+					</p>
+					<div id="productCategories">
+						<hr>
+						<a href=""><span class="badge badge-secondary">Electronica</span></a>
+						<a href=""><span class="badge badge-secondary">Accesorios</span></a>
+					</div>
+				</div>
+				<div class="col-3">
+					<hr>
+					<h4>Precio: </h4>
+					<h3 id="productPrice">$850.50</h3>
+					<span>Disponibles: </span>
+					<span id="currentItems">10</span>
+					<hr>
+					<button type="button" class="btn btn-outline-primary">
+						Agregar al carrito
+					</button>
+				</div>
+			</div>
+			<br>
+			<h3>Productos relacionados</h3>
+			<hr>
+			<div class="row">
+				<hr>
+				<div class="col">
+					<a href="#"><img class="img-responsive img-thumbnail" src="img/products/apple-watch.jpg"></a>
+				</div>
+				<div class="col">
+					<a href="#"><img class="img-responsive img-thumbnail" src="img/products/hybrid-pro.jpg"></a>
+				</div>
+				<div class="col">
+					<a href="#"><img class="img-responsive img-thumbnail" src="img/products/huawei-watch.jpg"></a>
+				</div>
+				<div class="col">
+					<a href="#"><img class="img-responsive img-thumbnail" src="img/products/samsung-gear.jpg"></a>
+				</div>
+				<div class="col">
+					<a href="#"><img class="img-responsive img-thumbnail" src="img/products/moto-360.jpg"></a>
+				</div>
+			</div>
+			<br>
+			<h3>Comentarios</h3>
+			<hr>
+			<div class="row" id="commentSection">
+				<div class="col-5">
+					<h4>Calificacion promedio de compradores:</h4>
+					<div class="container" id="productRating">
+						<ul id="productStarRating">
+							<li><span class="fa fa-star checked"></span></li>
+							<li><span class="fa fa-star checked"></span></li>
+							<li><span class="fa fa-star checked"></span></li>
+							<li><span class="fa fa-star checked"></span></li>
+							<li><span class="fa fa-star"></span></li>
+						</ul>
+						<h3 id="productRating">4/5</h3>
+					</div>
+				</div>
+				<div class="col-7">
+					<h4>Realiza un comentario sobre este producto: </h4>
+					<form method="POST">
+						<textarea id="commentArea" name="commentText" class="form-control" aria-label="With textarea" placeholder="Maximo 250 caracteres...">
+							
+						</textarea>
+						<br>
+						<input type="submit" name="submitComment" value="Enviar comentario" class="btn btn-outline-primary">
+					</form>
+				</div>
+			</div>
+			<br>
+			<h4>Ultimos comentarios:</h4>
+			<hr>
+			<div class="row comment">
+				<div class="col-2">
+					<a href=""><img class="img-responsive img-thumbnail" src="img/profilePics/pp1.jpg" alt="Imagen de usuario"></a>
+				</div>
+				<div class="col-10">
+					<span id="commentUserName">Eduardo Mata Navarro</span>
+					<span id="commentTimeStamp"> - 19/06/10 - 07:36pm</span>
+					<br>
+					<p id="commentText">
+						Muy buen producto, lo recomiendo plenamente, tambien recomiendo tomar mucha agua y comer frutas y verduras
+					</p>
+				</div>
+			</div>
+			<hr>
+			<div class="row comment">
+				<div class="col-2">
+					<a href=""><img class="img-responsive img-thumbnail" src="img/profilePics/rafaMarquez.jpg" alt="Imagen de usuario"></a>
+				</div>
+				<div class="col-10">
+					<span id="commentUserName">Rafael Marquez Lugo</span>
+					<span id="commentTimeStamp"> - 21/05/10 - 05:14pm</span>
+					<br>
+					<p id="commentText">
+						Excelente producto, llego a tiempo y en forma, hasta me dieron ganas de quedarme otros 5 años en la seleccion
+					</p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<footer>
+			<br>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h3>Informacion</h3>
+						<p>
+							Proyecto final de programacion de aplicaciones web con el prof. Gerardo Alvarado
+						</p>
+					</div>
+					<div class="col">
+						<h3>Categorias</h3>
+						<ul>
+							<li><a href="">Electronica</a></li>
+							<li><a href="">Accesorios</a></li>
+							<li><a href="">Linea blanca</a></li>
+							<li><a href="">Automoviles</a></li>
+							<li><a href="">Ropa</a></li>
+						</ul>
+					</div>
+					<div class="col">
+						<h3>Links rapidos</h3>
+						<ul>
+							<li><a href="">Home</a></li>
+							<li><a href="">Cuenta</a></li>
+							<li><a href="">Carrito</a></li>
+						</ul>
+					</div>
+				</div>
+				<hr>
+				<div id="footerFeet">
+					<h5>Disclaimer:</h5>
+					<p>
+						Esta pagina fue hecha a mano con ayuda de boostrap y de su respectivo sitio
+					</p>
+					<p>
+						-Eduardo Isai Mata Navarro
+					</p>
+				</div>
+			</div>
+		</footer>
+		<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-hidden="true">
+			<form method="POST">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Sign up</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-6">
+									<img id="uploadedImg" class="img-responsive img-thumbnail" src="..." accept="image/jpeg, image/png" alt="Elija una foto de perfil...">
+										<br>
+										<br>
+    									<input type="file" class="form-control-file" onchange="setPhoto(this)">
+									</div>
+								</div>
+								<br>
+								<label>Nombre de usuario:</label>
+								<input id="newUserName" class="form-control" type="text" name="userName" required>
+								<label>Correo:</label>
+								<input id="newUserMail" class="form-control" type="email" name="mail" required>
+								<label>Contraseña:</label>
+								<input id="newUserPass" class="form-control" type="password" name="passwrd" onblur="checkPwrdMatch()" required>
+								<label>Confirmar contraseña:</label>
+								<input id="newUserPassConfirm" class="form-control" type="password" name="passwrdConfirm" onblur="checkPwrdMatch()" required>
+								<span id="passAlertSpan">Las contraseñas no coinciden</span>
+								<label>Telefono (opcional):</label>
+								<input class="form-control" type="tel" name="phone" placeholder="123-123-1234">
+								<label>Dirección (opcional):</label>
+								<input class="form-control" type="text" name="address">
+							</div>
+						</div>
+						<div class="modal-footer">
+							<input class="btn btn-primary" type="submit" name="register" value="Registrar" onclick="validateSignIn()">
+							<input class="btn btn-danger" type="reset" name="reset" value="Limpiar">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-hidden="true">
+			<form method="POST">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">LogIn</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="container">
+								<label>Usuario:</label>
+								<input class="form-control" type="email" name="user" placeholder="tuCorreo@example.com" required>
+								<label>Contraseña:</label>
+								<input class="form-control" type="password" name="passwrd" placeholder="********" required>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<input class="btn btn-primary" type="submit" name="logIn" value="log in">
+							<input class="btn btn-danger" type="reset" name="reset" value="Limpiar">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+	</body>
+</html>

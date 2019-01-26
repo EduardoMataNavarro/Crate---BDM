@@ -1,0 +1,262 @@
+#headWrapper
+{
+	background-color: #4682B4;
+	width: 100%;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+.card:hover
+{
+	transition: 0.35s;
+	box-shadow: 8px 15px 15px #EFEFEF;
+}
+
+.topContainer
+{
+	padding: 0;	
+	height: 25px;
+	text-align: center;
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+}
+.topMenuButton
+{
+	display: block;
+	width: 100%;
+	color: white;
+}
+.topMenuButton:hover
+{
+	color: white;
+}
+
+.linksContainer
+{
+	position: absolute;
+	z-index: 100;
+	max-width: 250px;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid #DDDDDD;
+	display: none;
+}
+
+.linksContainer ul
+{
+	list-style: none;
+	padding-left: 0;
+}
+
+.linksContainer li
+{
+	border-bottom: 1px solid #DDDDDD;
+} 
+
+.linksContainer a
+{
+	color: black;
+}
+
+#headContainer
+{
+	height: 75px;
+}
+#sessionMessage
+{
+	color: red;
+	font-weight: 0.5em;
+	display: none;
+}
+#searchBar
+{
+	position: relative;
+	display: inline;
+	width: 100%;
+	height: 30px;
+	border: none;
+	border-radius: 10px;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	padding-left: 1.5%;	
+}
+
+#passAlertSpan
+{
+	top: 3px;
+	font-size: 15px;
+	color: red;
+	display: none;
+}
+#bannerContainer
+{
+	padding: 0;
+}
+
+#profileCard
+{
+	top: -50px;
+}
+
+.profileContent
+{
+	padding-top: 20px;
+}
+
+.hiddenContent
+{
+	display: none;
+}
+
+#searchBar:hover
+{
+	transition: 0.1s;
+	border: 1px solid #7B68EE;
+}
+
+#headNav
+{
+	border-top: 1px solid #808080;
+	background-color: #4682B4;
+}
+
+#sliderContainer
+{
+	margin-top: 25px;
+}
+
+#categoriesBar
+{
+	margin-top: 25px;
+}
+#categoriesBar a 
+{
+	color: #000000;
+}
+
+#productName
+{
+	text-align: center;
+}
+
+#productRating h3
+{
+	float: right;
+}
+#productStarRating
+{
+	padding-left: 2%;
+}
+#productStarRating li
+{
+	list-style: none;
+	display: inline;
+	font-size: 60px;
+	color: #E6E6FA;
+}
+.productUserRating label 
+{
+	float: left;
+	color: #E6E6FA;
+	font-size: 1.75em;
+}
+.starLabel
+{
+	float: left;
+	font-size: 1.75em;
+}
+.productUserRating label:hover,
+.productUserRating label:hover ~ label,
+.productUserRating input:checked ~ label
+{
+	color: #DAA520;
+}
+.radioStar
+{
+	display: none;
+}
+.checked
+{
+	color: #DAA520;
+}
+.unchecked
+{
+	color: #E6E6FA;
+}
+
+#cartContainer
+{
+	margin-top: 25px;
+	border-radius: 10px;
+	box-shadow: 3px 5px #EEEEEE;
+	border: 1px solid #CCCCCC;
+}
+
+footer
+{
+	background-color: #4682B4;
+	color: white;
+	margin-top: 20px;
+	padding-bottom: 1px;
+	bottom: 0;
+}
+
+footer ul
+{
+	list-style: none;
+	padding-left: 0;
+}
+
+footer ul li a
+{
+	color: white;
+}
+
+footer ul li a:hover
+{
+	color: white;
+	text-decoration: line-through;
+}
+
+#footerFeet
+{
+	text-align: center;
+}
+
+
+.transactionName a 
+{
+	color: #000000;
+}
+.transactionName a:hover 
+{
+	text-decoration: underline;
+}
+
+#productFilesSection input[type="file"]
+{
+	display: none;
+}
+
+#btnComprarTodo
+{
+	position: relative;
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+#imageContainer
+{
+	height: 540px;
+	overflow: hidden;
+}
+
+.item-video
+{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
